@@ -1,17 +1,35 @@
-> **A stylish and responsive cosmetic website built with HTML, CSS, and JavaScript — ideal for beauty brands, product showcases, or frontend practice.**
+# Cosmetic Website
 
-### Alternative descriptions based on your focus:
+A modern and responsive cosmetic website designed to showcase beauty and skincare products through an elegant, user-friendly interface. This project demonstrates front-end development best practices, attractive layouts, and seamless user experiences for e-commerce and brand-focused websites.
 
-#### 💄 For a business/brand showcase:
+## Features
 
-> **Elegant and responsive cosmetic brand website template — perfect for salons, beauty products, or skincare landing pages.**
+* Responsive design for desktop and mobile devices
+* Modern and visually appealing UI
+* Product showcase sections
+* Smooth navigation and interactive elements
+* Clean, organized codebase
 
-#### 🌐 For learning/web development:
+## Technologies Used
 
-> **Frontend cosmetic website project designed for practicing responsive design using HTML, CSS, and basic JavaScript.**
+* HTML5
+* CSS3
+* JavaScript
 
-#### 🎨 If it's visually rich:
+## Getting Started
 
-> **Visually appealing and responsive cosmetic website template with smooth layout and product-focused design.**
+1. Clone the repository:
 
-Let me know if you'd like a matching `README.md` file for this project too!
+   ```bash
+   git clone https://github.com/frankpatel1/cosmetic-website.git
+   ```
+2. Open the project folder.
+3. Launch `index.html` in your browser.
+
+## Contributing
+
+Contributions are welcome. Fork the repository, create a branch, commit your changes, and submit a pull request for review.
+
+## License
+
+Available for educational and personal use.
