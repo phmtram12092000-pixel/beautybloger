@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive cosmetics website design tutorial</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>GlowEssence Cosmetics | Luxury Organic Beauty & Skincare</title>
+    <meta name="description" content="Discover premium organic cosmetics, clean skincare rituals, and dermatologically tested beauty essentials crafted with nourishing botanicals for radiant skin.">
+    <meta name="keywords" content="organic cosmetics, natural skincare, beauty products, clean makeup, luxury skincare, vegan cosmetics">
+    <meta name="author" content="GlowEssence Cosmetics">
+    <link rel="canonical" href="https://example.com/cosmetic-website/">
+
+    <!-- Social Preview / Open Graph -->
+    <meta property="og:title" content="GlowEssence Cosmetics | Luxury Organic Beauty & Skincare">
+    <meta property="og:description" content="Discover premium organic cosmetics and clean skincare essentials formulated for glowing, healthy skin.">
+    <meta property="og:image" content="images/home-img-1.png">
+    <meta property="og:url" content="https://example.com/cosmetic-website/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GlowEssence Cosmetics | Luxury Organic Beauty & Skincare">
+    <meta name="twitter:description" content="Discover premium organic cosmetics and clean skincare essentials formulated for glowing, healthy skin.">
+    <meta name="twitter:image" content="images/home-img-1.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
-    <!-- custom css file link  -->
+    <!-- custom css file links  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
     
-     <link rel="shortcut icon" type="image" href="./images/category-1.png">
-
+    <link rel="shortcut icon" type="image/png" href="./images/category-1.png">
+    <link rel="apple-touch-icon" href="./images/category-1.png">
 </head>
 <body>
 
@@ -25,18 +47,18 @@
 
 <header class="header">
 
-    <a href="#home" class="logo"> <img src="images/logo.png" alt=""> </a>
+    <a href="#home" class="logo"> <img src="images/logo.png" alt="GlowEssence Cosmetics Logo"> </a>
 
-    <form action="" class="search-form">
-        <input type="search" name="" placeholder="search here..." id="search-box">
+    <form action="" class="search-form" onsubmit="event.preventDefault();">
+        <input type="search" name="search" placeholder="search here..." id="search-box">
         <label for="search-box" class="fas fa-search"></label>
     </form>
 
     <div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <div id="menu-btn" class="fas fa-bars" aria-label="Toggle Navigation Menu"></div>
+        <div id="search-btn" class="fas fa-search" aria-label="Toggle Search"></div>
+        <a href="#arrivals" class="fas fa-heart" aria-label="View Wishlist"></a>
+        <a href="#shop" class="fas fa-shopping-cart" aria-label="View Shopping Cart"></a>
     </div>
 
 </header>
@@ -63,49 +85,49 @@
 
     <div class="slide active">
         <div class="content">
-            <img src="images/content-img-1.png" alt="">
-            <span>new arrivals 2022</span>
-            <h3>cosmetics</h3>
-            <a href="#" class="btn">read more</a>
+            <img src="images/content-img-1.png" alt="Cosmetic formulation icon">
+            <span>pure & organic</span>
+            <h3>luxury skincare</h3>
+            <a href="#shop" class="btn" style="background:#e84393; color:#fff; border-color:#e84393;">Shop Collection</a>
             <div class="controls">
-                <div class="fas fa-angle-left" onclick="prev()"></div>
-                <div class="fas fa-angle-right" onclick="next()"></div>
+                <div class="fas fa-angle-left" onclick="prev()" aria-label="Previous Slide"></div>
+                <div class="fas fa-angle-right" onclick="next()" aria-label="Next Slide"></div>
             </div>
         </div>
         <div class="image">
-            <img src="images/home-img-1.png" alt="">
+            <img src="images/home-img-1.png" alt="Radiant skincare and beauty products">
         </div>
     </div>
 
     <div class="slide">
         <div class="content">
-            <img src="images/content-img-2.png" alt="">
-            <span>new arrivals 2022</span>
-            <h3>accessories</h3>
-            <a href="#" class="btn">read more</a>
+            <img src="images/content-img-2.png" alt="Beauty accessories badge">
+            <span>new arrivals</span>
+            <h3>beauty essentials</h3>
+            <a href="#shop" class="btn" style="background:#e84393; color:#fff; border-color:#e84393;">Shop Collection</a>
             <div class="controls">
-                <div class="fas fa-angle-left" onclick="prev()"></div>
-                <div class="fas fa-angle-right" onclick="next()"></div>
+                <div class="fas fa-angle-left" onclick="prev()" aria-label="Previous Slide"></div>
+                <div class="fas fa-angle-right" onclick="next()" aria-label="Next Slide"></div>
             </div>
         </div>
         <div class="image">
-            <img src="images/home-img-2.png" alt="">
+            <img src="images/home-img-2.png" alt="Organic makeup and beauty accessories" loading="lazy">
         </div>
     </div>
 
     <div class="slide">
         <div class="content">
-            <img src="images/content-img-3.png" alt="">
-            <span>new collections</span>
-            <h3>skin care</h3>
-            <a href="#" class="btn">read more</a>
+            <img src="images/content-img-3.png" alt="Clean beauty certification badge">
+            <span>botanical formulas</span>
+            <h3>natural glow</h3>
+            <a href="#shop" class="btn" style="background:#e84393; color:#fff; border-color:#e84393;">Shop Collection</a>
             <div class="controls">
-                <div class="fas fa-angle-left" onclick="prev()"></div>
-                <div class="fas fa-angle-right" onclick="next()"></div>
+                <div class="fas fa-angle-left" onclick="prev()" aria-label="Previous Slide"></div>
+                <div class="fas fa-angle-right" onclick="next()" aria-label="Next Slide"></div>
             </div>
         </div>
         <div class="image">
-            <img src="images/home-img-3.png" alt="">
+            <img src="images/home-img-3.png" alt="Natural botanicals cosmetics collection" loading="lazy">
         </div>
     </div>
 
@@ -849,64 +871,104 @@
 
         <div class="box">
             <h3>extra links</h3>
-            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my order </a>
-            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
-            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
-            <a href="#" class="link"> <i class="fas fa-angle-right"></i> private policy </a>
-            <a href="#" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+            <a href="#shop" class="link"> <i class="fas fa-angle-right"></i> my order </a>
+            <a href="#shop" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
+            <a href="#arrivals" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
+            <a href="privacy.html" class="link"> <i class="fas fa-angle-right"></i> privacy policy </a>
+            <a href="terms.html" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+            <a href="javascript:void(0)" onclick="showCookieConsentPreferences()" class="link"> <i class="fas fa-angle-right"></i> cookie preferences </a>
         </div>
 
         <div class="box">
             <h3>contact info</h3>
             <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
             <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-            <p> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </p>
-            <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
+            <p> <i class="fas fa-envelope"></i> support@glowessence.example.com </p>
+            <p> <i class="fas fa-map"></i> Mumbai, India - 400104 </p>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="fab fa-instagram" aria-label="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin" aria-label="LinkedIn"></a>
             </div>
         </div>
 
         <div class="box">
             <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
-            <form action="">
-                <input type="email" name="" placeholder="enter your email" id="" class="email">
-                <input type="submit" value="subscribe" class="btn">
+            <form action="#" id="newsletter-form" method="POST" novalidate>
+                <!-- Anti-spam Honeypot field (hidden from humans, catches bots) -->
+                <input type="text" name="_hp_company" style="display:none!important;" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <input type="email" name="email" placeholder="enter your email" id="newsletter-email" class="email" required>
+                <input type="submit" value="subscribe" class="btn" id="newsletter-submit">
+                <div id="newsletter-msg" style="display:none; font-size: 1.3rem; margin-top: 1rem; color: #27ae60; text-transform:none;"></div>
             </form>
         </div>
 
     </div>
 
-    <div class="credit"> created by <span>mr. Frank designer</span> | all rights reserved! </div>
+    <div class="credit"> created by <span>mr. Frank designer</span> | all rights reserved! • <a href="privacy.html" style="color: #e84393;">Privacy Policy</a> • <a href="terms.html" style="color: #e84393;">Terms</a> </div>
 
 </section>
 
 <!-- footer section ends -->
 
-
-
-
-
-
-
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<!-- custom js file link      -->
+<!-- custom js file link -->
 <script src="js/script.js"></script>
+<script src="js/cookie-consent.js"></script>
 
+<!-- Privacy-preserving Analytics Integration -->
 <script>
     lightGallery(document.querySelector('.gallery .lightbox'));
+
+    // Newsletter form validation & spam protection handler
+    const newsForm = document.getElementById('newsletter-form');
+    if (newsForm) {
+        newsForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const honeypot = this.querySelector('input[name="_hp_company"]').value;
+            const emailInput = document.getElementById('newsletter-email');
+            const msgBox = document.getElementById('newsletter-msg');
+
+            // Bot detected via honeypot
+            if (honeypot) {
+                console.warn('Bot submission prevented.');
+                return;
+            }
+
+            const emailVal = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailVal || !emailRegex.test(emailVal)) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = '#e74c3c';
+                msgBox.textContent = 'Please enter a valid email address.';
+                return;
+            }
+
+            // Successful simulated submission
+            msgBox.style.display = 'block';
+            msgBox.style.color = '#27ae60';
+            msgBox.textContent = 'Thank you for subscribing to GlowEssence!';
+            emailInput.value = '';
+            setTimeout(() => { msgBox.style.display = 'none'; }, 4000);
+        });
+    }
+
+    // Initialize Analytics if user consented
+    window.addEventListener('cookieConsentUpdated', function(e) {
+        if (e.detail && e.detail.analytics) {
+            // Placeholder: Load Google Analytics 4 (GA4) or Plausible
+            console.log('[Analytics] User consented to analytics. Initializing tracking...');
+            // Example snippet:
+            // window.dataLayer = window.dataLayer || [];
+            // function gtag(){dataLayer.push(arguments);}
+            // gtag('js', new Date());
+            // gtag('config', 'G-XXXXXXXXXX');
+        }
+    });
 </script>
-    
 </body>
 </html>
